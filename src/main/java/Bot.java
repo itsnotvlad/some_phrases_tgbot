@@ -3,15 +3,13 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.ArrayList;
 
 public class Bot extends TelegramLongPollingBot {
     final private String BOT_TOKEN = "6752654516:AAEkD7o3pMdqvPw3JWCeMn8ydQfcdAWIAuo";
-    final private String BOT_NAME = "SomePhrasesBot";
+    final private String BOT_NAME = "some_phrases_tgbot";
     Storage storage;
     ReplyKeyboardMarkup replyKeyboardMarkup;
 
@@ -71,21 +69,4 @@ public class Bot extends TelegramLongPollingBot {
         }
         return response;
     }
-
-//    void initKeyboard() {
-//        // Создаем объект будущей клавиатуры и выставляем нужные настройки
-//        replyKeyboardMarkup = new ReplyKeyboardMarkup();
-//        replyKeyboardMarkup.setResizeKeyboard(true); // подгоняем размер
-//        replyKeyboardMarkup.setOneTimeKeyboard(false); // скрываем после использования
-//
-//        // Создаем список с рядами кнопок
-//        ArrayList<KeyboardRow> keyboardRows = new ArrayList<>();
-//        // Создаем один ряд кнопок и добавляем его в список
-//        KeyboardRow keyboardRow = new KeyboardRow();
-//        keyboardRows.add(keyboardRow);
-//        // Добавляем одну кнопку с текстом "Просвяти" наш ряд
-//        keyboardRow.add(new KeyboardButton("Просвяти"));
-//        // добавляем лист с одним рядом кнопок в главный объект
-//        replyKeyboardMarkup.setKeyboard(keyboardRows);
-//    }
 }
