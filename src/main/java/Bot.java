@@ -15,7 +15,6 @@ public class Bot extends TelegramLongPollingBot {
 
     Bot() {
         storage = new Storage();
-//        initKeyboard();
     }
 
 
