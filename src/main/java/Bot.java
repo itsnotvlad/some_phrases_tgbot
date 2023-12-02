@@ -5,8 +5,6 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.util.ArrayList;
-
 public class Bot extends TelegramLongPollingBot {
     final private String BOT_TOKEN = "6752654516:AAEkD7o3pMdqvPw3JWCeMn8ydQfcdAWIAuo";
     final private String BOT_NAME = "some_phrases_tgbot";
