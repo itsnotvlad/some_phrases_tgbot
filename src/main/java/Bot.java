@@ -15,6 +15,7 @@ public class Bot extends TelegramLongPollingBot {
         storage = new Storage();
     }
 
+    // Some another comment from testBranch
 
     @Override
     public String getBotUsername() {
