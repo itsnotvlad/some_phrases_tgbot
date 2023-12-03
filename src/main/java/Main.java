@@ -10,5 +10,6 @@ public class Main {
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
+        System.out.println("Wrote few changes in Main.java by anotherTestBranch");
     }
 }
