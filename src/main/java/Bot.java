@@ -1,3 +1,4 @@
+import io.github.cdimascio.dotenv.Dotenv;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -6,8 +7,9 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class Bot extends TelegramLongPollingBot {
-    final private String BOT_TOKEN = "6752654516:AAEkD7o3pMdqvPw3JWCeMn8ydQfcdAWIAuo";
-    final private String BOT_NAME = "some_phrases_tgbot";
+    Dotenv dotenv = Dotenv.load();
+    final private String BOT_TOKEN = dotenv.get("BOT_TOKEN");
+    final private String BOT_NAME = dotenv.get("BOT_NAME");
     Storage storage;
     ReplyKeyboardMarkup replyKeyboardMarkup;
 

@@ -10,11 +10,5 @@ public class Main {
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
-        System.out.println("Wrote few changes in Main.java by anotherTestBranch");
-        System.out.println("Added some code in testBranch");
-
-        System.out.println("Code added by testBranch");
-        
-        System.out.println("Other code added by anotherTestBranch");
     }
 }

@@ -142,6 +142,7 @@ replay_pid*
 
 ### Maven ###
 target/
+target/classes/*.class
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -160,3 +161,6 @@ buildNumber.properties
 .classpath
 
 # End of https://www.toptal.com/developers/gitignore/api/java,maven,intellij
+
+# Telegram bot credentials
+.env
